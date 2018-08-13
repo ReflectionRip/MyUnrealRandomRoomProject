@@ -1,0 +1,3 @@
+[submodule "Content/StarterContent"]
+	path = Content/StarterContent
+	url = https://github.com/ReflectionRip/UE4StarterContent
