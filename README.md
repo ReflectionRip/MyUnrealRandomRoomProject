@@ -1,16 +1,17 @@
 # MyUnrealRandomRoomProject
 A random room selector in unreal engine 4.20.1
 
-This map has a trigger box that will pull one of 2 random maps into the doorway, resulting in a near infinite map of random rooms.  This is an map generater example, and will not include an actual game, or art, or really anything except for the code to generate the rooms. 
+This map has a trigger box that will pull one of 5 random maps into the doorway, resulting in a near infinite map of random rooms. This is an map generater example, and will not include an actual game, or art, or anything except for the code to generate the rooms. 
 
 Bugs:
 
-1. After a certain distance from the center of the map, the navmesh will stop working.  It has a limited range.
+1. After a certain distance from the center of the map, the navmesh will stop working. It has a limited range.
 2. Rooms may spawn over each other resulting in a blocked passageway.
+3. The RecastNavMesh-Default, may need to be deleted and new navigation data will need to be generated. After doing so, change the new RecastNavMesh-Default 'Settings -> Runtime -> Runtime Generation' to 'Dynamic'
 
 TODO:
 
-1. Make more rooms.
+1. Make more rooms. (Done)
 2. Spawn further ahead.  Currently only spawns the next room.
 3. Build a list / table of rooms with other details that can control what will spawn.
 3. Store a room tree, and release older rooms? (Only keep loaded the nearest rooms to the player)
